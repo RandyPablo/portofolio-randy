@@ -219,6 +219,31 @@ header {
 .resume-item .date { display: inline-block; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; color: #DDAE3B; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
 .resume-item p { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.8rem; color: #E5E0D8; }
 
+.resume-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.resume-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+.resume-gallery img:hover {
+    transform: scale(1.02);
+}
+
+.pln-portrait {
+    max-width: 350px;
+    height: 300px !important;
+    object-position: center 20%;
+}
+
+
 /* Section Common */
 section {
     padding: 3rem 5% !important;
